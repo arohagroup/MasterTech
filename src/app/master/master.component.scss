@@ -1,0 +1,26 @@
+.border-left-gray{
+    border-left: 2px solid lightgray;
+}
+
+.box-border-gray{
+    border: 2px solid lightgray;
+    padding: 1%;
+}
+
+input {
+    background-color: transparent;
+}
+
+.card-data{
+    box-shadow: 4px 7px 15px #888888;
+}
+
+.container-body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(315deg, black, transparent);
+}
+
+// .form-control{
+//     background-color: #ffffff57;
+// }

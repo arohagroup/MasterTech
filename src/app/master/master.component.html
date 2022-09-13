@@ -1,0 +1,153 @@
+<div class="container-body pb-5">
+
+<div class="d-flex">
+    <div class="col"></div>
+    <div class="col-md-3 col-sm-10 d-flex justify-content-around my-3 form-group">        
+        <input type="file" class="form-control text-dark" (change)="addfile($event)" placeholder="Upload file" accept=".csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">        
+      </div> 
+    <div class="col"></div>
+</div>
+
+<div class="container">
+    <div class="row mt-3 border-0 d-flex flex-row">
+        <div class="col-md-4 col-sm-6 card-data p-4 pt-0">
+            <div class="row my-3">
+                <img src="../../assets/Images/Logo.jpg" style="width: 140px; height: 70px;">
+                <div class="col d-flex align-items-center text-uppercase"><span class="h4 m-0">Periodic Service<br> Estimator</span></div>
+            </div>
+            <form (ngSubmit)="filterData(f)" #f="ngForm">
+                <div class="row my-2">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="model" class="col-form-label col-3">Model </label>
+                            <div class="col-9">
+                            <select
+                                type="text"
+                                class="form-control"
+                                id="model"
+                                name="model"
+                                [(ngModel)]="activeModel"
+                                required
+                                #model="ngModel"
+                                [ngClass]="{ errInput: !model.valid && model.touched }">
+                                    <option
+                                        *ngFor="let item of Models"
+                                        [value]="item">
+                                    {{ item }}
+                                    </option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="fuel_type" class="col-form-label col-3">Fuel Type </label>
+                            <div class="col-9">
+                            <select
+                                type="text"
+                                class="form-control"
+                                id="fuel_type"
+                                name="fuel_type"
+                                [(ngModel)]="activeFuel"
+                                required
+                                #fuel_type="ngModel"
+                                [ngClass]="{ errInput: !fuel_type.valid && fuel_type.touched }">
+                                    <option
+                                        *ngFor="let item of FuelTypes"
+                                        [value]="item">
+                                    {{ item }}
+                                    </option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col">
+                        <div class="form-group row">
+                            <label for="km" class="col-form-label col-3">Kilometer </label>
+                            <div class="col-9">
+                            <select
+                                type="text"
+                                class="form-control"
+                                id="km"
+                                name="km"
+                                [(ngModel)]="activeKM"
+                                required
+                                #km="ngModel"
+                                [ngClass]="{ errInput: !km.valid && km.touched }">
+                                    <option
+                                        *ngFor="let item of Kilometers"
+                                        [value]="item">
+                                    {{ item }}
+                                    </option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-end">
+                        <button class="btn btn-md m-2 bg-dark text-light w-50">Search</button>
+                        <button class="btn btn-md bg-secondary text-light m-2 w-50" (click)="clear(f)">Clear</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8 col-sm-6 text-center" >
+            <img *ngIf="activeModel" src="../../assets/Images/{{activeModel}}.png" width="fit-content" height="314px">
+        </div>
+       
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <div *ngIf="filteredData.length > 0 || estimatedCostData.length > 0 && showTable">
+               <div class="row p-3 d-flex justify-content-center flex-row card border-0">
+                <div class="col-md-6 col-sm-12">
+                    <!-- <button 
+                    *ngIf="!(data.key == 'No.' || data.key == 'Parts Amount' || data.key == 'Labour Amount' || data.key == 'Total amount')">
+                    {{data.key}} - {{data.value}}
+                </button> -->
+                <table class="table table-striped">
+                    <thead *ngIf="filteredData.length > 0">
+                        <tr>
+                            <th scope="col">Parts</th>
+                            <th scope="col">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of filteredData; let i= index">
+                            <td>{{data.key}}</td>
+                            <td>{{data.value}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    
+                <!-- <button style="background-color: #000; color: #fff;"
+                    *ngIf="(data.key == 'Parts Amount' || data.key == 'Labour Amount' || data.key == 'Total amount')">
+                    {{data.key}} - {{data.value}}
+                </button> -->
+                <table  class="table table-striped">
+                    <thead *ngIf="estimatedCostData.length > 0">
+                        <tr>
+                            <th scope="col" colspan="2">Estimated Cost</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr *ngFor="let data of estimatedCostData; let i= index">
+                                <td style="width: 365px;">{{data.key}}</td>
+                                <td>{{data.value}}</td>
+                            </tr>
+                        </tbody>
+                </table>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
