@@ -21,6 +21,13 @@ input {
     background: linear-gradient(315deg, black, transparent);
 }
 
+.bottom-right-corner {
+    position: absolute;
+    bottom: 10px;
+    width: 300px;
+    right: 0;
+}
+
 // .form-control{
 //     background-color: #ffffff57;
 // }
