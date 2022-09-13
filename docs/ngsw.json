@@ -1,0 +1,127 @@
+{
+  "configVersion": 1,
+  "timestamp": 1663065832380,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.d6037e802436f3d2.js",
+        "/manifest.webmanifest",
+        "/polyfills.437b8a9a40fbceb9.js",
+        "/runtime.bfbcdf9881e60b16.js",
+        "/styles.4a37e2eeb36e446c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/Images/Altis [FMC].png",
+        "/assets/Images/Crysta [BS4] AT.png",
+        "/assets/Images/Crysta [BS4].png",
+        "/assets/Images/Crysta [BS6] AT.png",
+        "/assets/Images/Crysta [BS6].png",
+        "/assets/Images/Etios.png",
+        "/assets/Images/FMC Fortuner [BS4] AT.png",
+        "/assets/Images/FMC Fortuner [BS4].png",
+        "/assets/Images/FMC Fortuner [BS6] AT.png",
+        "/assets/Images/FMC Fortuner [BS6].png",
+        "/assets/Images/Fortuner [Old].png",
+        "/assets/Images/GLANZA.png",
+        "/assets/Images/Glanza[FMC].png",
+        "/assets/Images/Glanza[K12M].png",
+        "/assets/Images/Glanza[K12N].png",
+        "/assets/Images/Innova .png",
+        "/assets/Images/Logo.jpg",
+        "/assets/Images/New Camry Hybrid.png",
+        "/assets/Images/Urban Crusier[AT].png",
+        "/assets/Images/Urban Crusier[MT].png",
+        "/assets/Images/Urban_Crusier.png",
+        "/assets/Images/Velfire.png",
+        "/assets/Images/Yaris.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/Images/Altis [FMC].png": "fc88930fe47f0ece8cf7bd64dc5fe8be7b364cf2",
+    "/assets/Images/Crysta [BS4] AT.png": "f5b3c8bcfe49480ec16bc8994dde7db68e5fa4f3",
+    "/assets/Images/Crysta [BS4].png": "6652486d6768c1afb4302fc8d63d7138d48c2dea",
+    "/assets/Images/Crysta [BS6] AT.png": "ac71f8fc8a48afe91a608f3698b3c512dd19aea1",
+    "/assets/Images/Crysta [BS6].png": "4b4a1be6689581198f3dbbbc7e19c7a544378f79",
+    "/assets/Images/Etios.png": "edb8987940f5e76cb017a9be6a3b18771e6ef8bb",
+    "/assets/Images/FMC Fortuner [BS4] AT.png": "0cab74273abf7554bab7b5c7f3656328a9baea7f",
+    "/assets/Images/FMC Fortuner [BS4].png": "897719220bb94b024685cd85a269f2962acc0f59",
+    "/assets/Images/FMC Fortuner [BS6] AT.png": "d6ed4a4b887a3973f40f0eff954addeeeea65dcc",
+    "/assets/Images/FMC Fortuner [BS6].png": "ea292465960ada3116c83c34a8cbe93493fe57db",
+    "/assets/Images/Fortuner [Old].png": "f7416dc23bd2e87e16e8df16055497c84bea43e4",
+    "/assets/Images/GLANZA.png": "e93a34ad6d4986ad1dd8358a1f4dcb70feb8aa72",
+    "/assets/Images/Glanza[FMC].png": "9b57942149aad22f46a4925a74b6017aad94b475",
+    "/assets/Images/Glanza[K12M].png": "2a855d1f06c8ed0270d2ac0fd309978e698cc913",
+    "/assets/Images/Glanza[K12N].png": "b890357de5d1922880ff085bb8a7e0a194ed328f",
+    "/assets/Images/Innova .png": "a1c9f32f384c9cc0faa7de6b48c104a0cb3f9efc",
+    "/assets/Images/Logo.jpg": "75feb5be8ac345554aafed6f9185966c622490f5",
+    "/assets/Images/New Camry Hybrid.png": "de6779fd2f6c71e83c33e14e126b65ca11b9ab80",
+    "/assets/Images/Urban Crusier[AT].png": "cd13b603c2cee2942dc80b49d109367c96dbb567",
+    "/assets/Images/Urban Crusier[MT].png": "40e419457c6f9b4ce4da24b550ee6eec68d09057",
+    "/assets/Images/Urban_Crusier.png": "fd74d385fa138201419bb355b420935946289525",
+    "/assets/Images/Velfire.png": "58a8bdd9d6812b0386fbe5eac4d0ef3bb6254305",
+    "/assets/Images/Yaris.png": "5f3cac21715e975321822469b596ce495492363d",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "db5dffd85effcde63de71b4c510fd0a04bd2568e",
+    "/main.d6037e802436f3d2.js": "8633afb2f155d629c03b4f3fc9a60e32b91ac527",
+    "/manifest.webmanifest": "d977d7dbd74b409994314ffb152e5f1ec6311ff8",
+    "/polyfills.437b8a9a40fbceb9.js": "f902279f155aa25f808aa3611fa8ebf6bcca994b",
+    "/runtime.bfbcdf9881e60b16.js": "70f4f643a4335e4d391c9b137572b26b7a4e10da",
+    "/styles.4a37e2eeb36e446c.css": "31246e3a7733b3239c1932f8b6b161c71754bd9a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
