@@ -1,11 +1,12 @@
 {
-  "name": "masterTech",
-  "short_name": "masterTech",
+  "name": "Periodic Service Estimator",
+  "short_name": "Periodic Service Estimator",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
+  "description": "Periodic Service Estimator",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
