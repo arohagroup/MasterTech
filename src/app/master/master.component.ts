@@ -67,7 +67,7 @@ export class MasterComponent implements OnInit {
               this.FuelTypes = [...new Set(this.dataList.map(element => element['Fuel']))]
               this.Kilometers = [...new Set(this.dataList.map(element => element['KM']))]
         //     this.filelist = [];    
-            console.log(this.Models)    
+            // console.log(this.Models)    
     
   }  
 
